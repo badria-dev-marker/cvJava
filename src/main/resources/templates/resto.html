@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/" >
+<head>
+	<meta charset="utf-8"/>
+	<title>resto</title>
+	<meta name="description"
+	content="voici mon CV en ligne qui reprend mes compétences, mon parcours, mon profil"/>
+	<meta name="keywords" content="cv, badria, developper, developpeur, java, flutter, javascrip, svg, html5, css3"/>
+	<meta name="author" content="cv badria nguyen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+	<link rel="icon" type="text/css" th:href="@{../src/images/badev.png}"/>		
+	<link rel="stylesheet" type="text/css" th:href="@{srcresto/css/main.css}"/>
+	
+	
+</head>
+<body>
+	
+
+<!-------------------------------------------------------------------------------------->
+<!--end head-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--begin  body-->
+<!-------------------------------------------------------------------------------------->
+	
+	<div class="block_header dispFlexRow">
+		<div class="container_header dispFlexRow">
+			
+				<div class='container_menu dispFlexRow'>
+					<div class="header_logo dispFlexRow">
+						<svg class='div_h1_svg' th:xmlns="@{http://www.w3.org/2000/svg}">
+	  						<text id='txtLogo' x="45%"  y="50%" >
+	    							GOURMET
+	    							  <animate attributeName="x"  values = "-10%;100%;-10%"	
+											begin ="0s" dur="10s"  repeatCount="indefinite"
+											attributeType ="XML"/>
+							</text>
+
+						</svg>
+					
+					
+					</div>
+					<div class="menu dispFlexRow">
+						<div class="cols dispFlexRow"><a th:href="@{#}">Accueil</a></div>
+						<div class="cols dispFlexRow"><a th:href="@{#aPropos}">A propos</a></div>
+						<div class="cols dispFlexRow"><a th:href="@{#menu}">Menu</a></div>
+						<div class="cols dispFlexRow"><a th:href="@{#contact}">Contact</a></div>	
+						
+					</div>
+					
+				</div>
+				<div class="header_centent dispFlexRow">
+					<div id="div_h1">
+
+						<svg class='div_h1_svg' th:xmlns="@{http://www.w3.org/2000/svg}">
+	  						<text id='txtCenter' x="10%"  y="50%">
+	    							Les Légumes du marché
+	  						</text>
+						</svg>
+
+						
+					</div>
+					<div id="div_p"><p>Venez découvrir chaque jour un nouveau plat composé avec des produits frais et locaux</p>
+					</div>
+					<div class='dispFlexRow' id="div_lien"><a id="menuJour">MENU DU JOUR</a>
+					</div>
+
+					
+				</div>
+			 
+		</div>
+
+	</div>
+<!-------------------------------------------------------------------------------------->
+<!--end block image + logo + headerMenu-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin block présentation-->
+<!-------------------------------------------------------------------------------------->
+
+
+	<div id='aPropos' class="block_presentation dispFlexRow">
+		<div class="container_presentation dispFlexRow">
+			<div class="container_presentation_col1 dispFlexRow">
+				<div class="container_presentation_col1_title dispFlexRow">
+					<div class="col1_title dispFlexRow">
+					<h3>Bienvenue !</h3>
+					</div>
+					<div class="col1_presentation dispFlexRow">
+						<div class="sup dispFlexRow"><sup>AU</sup></div>
+						<div class="divGmt dispFlexRow"><p id="gmt">GOURMET</p></div>
+					</div>
+					
+				</div>
+				
+				<div class="col1_presentation_parag dispFlexRow">
+					<p>
+						Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen.
+					
+					</p>
+				</div>
+			</div>
+			<div class="container_presentation_col2 dispFlexRow">
+
+				<div class="presentation_col2_img2"></div>
+				<div class="presentation_col2_img1"></div>
+			
+			</div>	
+		</div>
+	</div>
+
+	
+<!-------------------------------------------------------------------------------------->
+<!--end block présentation-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin block galerie-->
+<!-------------------------------------------------------------------------------------->
+
+	
+
+	<div class="block_galerie dispFlexRow">
+		<div class="container_galerie dispFlexRow">
+			<div class="galerie1"></div>
+			<div class="galerie2 dispFlexRow">
+				<svg class='div_h1_svg2' th:xmlns="@{http://www.w3.org/2000/svg}">
+	  				<text class='txt1' id='galerie' x="40%"  y="40%">
+	    				Les Plats
+	    				<animate  attributeName="y"  values = "-5%;60%;-5%"	
+							begin ="0s" dur="10s"  repeatCount="indefinite"
+						attributeType ="XML"/>
+	  				</text>
+	  				<text class='txt2' x="40%"  y="70%">
+	    				GALERIE
+	    				<animate  attributeName="x"  values = "-10%;100%;-10%"	
+							begin ="0s" dur="10s"  repeatCount="indefinite"
+						attributeType ="XML"/>
+	  				</text>
+				</svg>
+			</div>
+			<div class="galerie3"></div>
+			
+		</div>
+
+		
+	</div>
+<!-------------------------------------------------------------------------------------->
+<!--end block galerie-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin block menu-->
+<!-------------------------------------------------------------------------------------->
+
+
+
+	<div id='menu' class="block_menu dispFlexRow">
+		<div class="menu_title">
+				<svg class='svg_title_menu div_h1_svg2' th:xmlns="@{http://www.w3.org/2000/svg}">
+	  				<text class='txt1' x="40%"  y="40%">
+	    				Mes Menus
+	    				<animate  attributeName="fill-opacity"  values = "0;.5;1;0;100;0"	
+							begin ="0s" dur="1s"  repeatCount="5"
+						attributeType ="XML"/>
+
+
+	  				</text>
+	  				<text class='txt2' x="40%"  y="70%">
+	    				SERVICES
+	    				<animate  attributeName="y"  values = "-5%;90%;90%"	begin ="0s" dur="10s"  repeatCount="indefinite" attributeType ="XML"/>
+							<animate  attributeName='x' values = '-5%;100%;-5%'
+							begin ="0s" dur="10s"  repeatCount="5" attributeType ="XML"/>
+						
+	  				</text>
+				</svg>
+			</div>
+
+		
+		<div class="container_menu dispFlexRow">
+			
+			
+			<div class="menu_col dispFlexRow">
+				<img  th:src="@{../srcresto/img/icone-tasse.png}" alt="photo d'une tasse de café">
+				<h3>BRUNCH</h3>
+				<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+			</div>
+			<div class="menu_col">
+				<img  th:src="@{../srcresto/img/icone-plat.png}" alt="photo d'un plat">
+				<h3>DÉJEUNER</h3>
+				<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+			</div>
+			<div class="menu_col">
+				<img  th:src="@{../srcresto/img/icone-cloche.png}" alt="phto d'une cloche">
+				<h3>DÎNER</h3>
+				
+					<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+<!-------------------------------------------------------------------------------------->
+<!--end block menu-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin block réservation-->
+<!-------------------------------------------------------------------------------------->
+
+
+
+
+	<div class="block_reservation dispFlexRow">
+		<div class="reservation">
+				<svg class='reservation div_h1_svg2' th:xmlns="@{http://www.w3.org/2000/svg}">
+	  				<text class='txt1' x="30%"  y="40%">
+	    				Pour Manger
+	    				<animate  attributeName="font-size"  values = "10;50;10"	
+							begin ="0s" dur="5s"  repeatCount="5"
+						attributeType ="XML"/>
+
+	  				</text>
+	  				<text class='txt2' x="30%"  y="70%">
+	    				Réservation
+	  				</text>
+
+
+				</svg>
+			</div>
+		
+	</div>
+
+	
+
+<!-------------------------------------------------------------------------------------->
+<!--end partie réservation-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin partie nosProduits-->
+<!-------------------------------------------------------------------------------------->
+
+	<div class="block_nosProduit dispFlexRow">
+		<div class="container_produits dispFlexRow">
+			<div class="groseilles dispFlexRow">
+				<img id='grseilles'  th:src="@{../srcresto/img/groseilles.png}">
+				<div class="container_fraises dispFlexRow">
+					<img id='fraises1'  th:src="@{../srcresto/img/fraises.png}">
+					<img id='fraises2' th:src="@{../srcresto/img/fraises.png}">
+				</div>
+				
+
+			</div>
+
+			<div class="nosProduits dispFlexRow">
+				<div class="nosProduits_title">
+					<svg class='nos_produits div_h1_svg2' th:xmlns="@{http://www.w3.org/2000/svg}">
+		  				<text class='txt1' x="40%"  y="40%">
+		    				Nos Produits
+		    				<animate  attributeName='x' values = '-5%;100%;-5%'
+							begin ="0s" dur="10s"  repeatCount="indefinite" attributeType ="XML"/>
+		  				</text>
+		  				<text class='txt2' x="40%"  y="70%">
+		    				LE MARCHÉ
+		    				<animate  attributeName='x' values = '100%;0%;100%'
+							begin ="0s" dur="10s"  repeatCount="indefinite" attributeType ="XML"/>
+		  				</text>
+					</svg>
+				</div>
+				<div class="nos_produits_parag">
+					<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
+					<div class='dispFlexRow' id="div_know"><a href="#">En savoir plus</a></div>
+				</div>
+				
+				
+			</div>
+
+		</div>
+			
+		</div>
+
+<!-------------------------------------------------------------------------------------->
+<!--end partie nosProduits-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin partie footer-->
+<!-------------------------------------------------------------------------------------->
+
+
+		<div id='contact' class="block_footer dispFlexRow">
+ 	
+			<div class="container_footer dispFlexRow">
+
+					<div class="footer_parag1 dispFlexRow">
+		   			
+						<div class="gourmet dispFlexRow"><p>GOURMET</p></div>
+						<p>3 RUE DE BONREPOS</p>
+						<p>31000 TOULOUSE</p>
+
+		   			</div>
+
+	   				<div class="footer_parag2 dispFlexRow">
+	   			
+						<p>HORAIRES</p>
+						<p>DU LUNDI AU SAMEDI DE 10H À 22H</p>
+						<p>LE DIMANCHE À PARTIR DE 11H</p>
+
+	   				</div>
+	    			<div class="liens dispFlexRow">
+				      	<a th:href="@{https://www.facebook.com/}" id="fa" target="_blank">
+				      		<img th:src="@{../srcresto/img/facebook.png}"/>
+				      	</a>
+				      	<a th:href="@{https://twitter.com}" id="tw" target="_blank">
+				      		<img th:src="@{../srcresto/img/twitter.png}"/>
+				      	</a>
+				      	<a th:href="@{https://www.instagram.com}" id="ins" target="_blank">
+				      		<img th:src="@{../srcresto/img/instagram.png}"/>
+				      	</a>
+				      	<a th:href="@{https://aboutme.google.com}" 
+				      			id="go" target="_blank">
+				      		<img th:src="@{../srcresto/img/google-plus.png}"/>
+				      	</a>
+		      
+	    			</div>
+	    			<div class='etoile'>
+	    				<svg version="1.1" id="Calque_1" th:xmlns="@{http://www.w3.org/2000/svg}" th:xmlns:xlink="@{http://www.w3.org/1999/xlink}" x="0px" y="0px"
+							 width="92.833px" height="29.333px" viewBox="0 0 92.833 29.333" enable-background="new 0 0 92.833 29.333" xml:space="preserve">
+						<polygon fill="#fff" stroke="#efefef" stroke-miterlimit="10" points="30.096,7.069 25.376,15.375 29.543,23.971 20.186,22.049 
+							13.299,28.668 12.234,19.176 3.811,14.671 12.51,10.725 14.192,1.322 20.632,8.376 "/>
+						<polygon fill="#fff" stroke="#efefef" stroke-miterlimit="10" points="60.188,10.869 54.14,18.262 56.8,27.436 47.899,23.968 
+							39.997,29.333 40.545,19.797 33,13.939 42.239,11.513 45.479,2.527 50.641,10.564 "/>
+						<polygon fill="#fff" stroke="#efefef" stroke-miterlimit="10" points="86.359,7.454 81.39,15.612 85.293,24.33 75.998,22.126 
+							68.913,28.533 68.138,19.012 59.855,14.253 68.671,10.573 70.637,1.226 76.861,8.473 "/>
+						</svg>
+
+	    			</div>
+
+    				<div class="footer_contact dispFlexRow">
+    					<div class="contact dispFlexRow">
+		    				<div class="dispFlexRow"><p id="p1">TÉLÉPHONE - 08 97 59 06 99</p></div>
+						    <div class="dispFlexRow span"><span>&#73;</span></div>
+						    <div class="dispFlexRow"><a th:href="@{mailto:CONTACT@GOURMET.FR}">MAIL - CONTACT@GOURMET.FR</a></div>
+
+    					</div>
+    					<div class="copyright dispFlexRow">
+    					<p id="p2">©GOURMET 2016 TOUT DROIT RÉSERVÉ</p>
+    					</div>
+		
+		    		</div>  
+
+				
+	</div>
+	   		
+    
+  </div>
+<!-------------------------------------------------------------------------------------->
+<!--end partie footer-->
+<!-------------------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------------->
+<!--Begin déclartion d'un script js-->
+<!-------------------------------------------------------------------------------------->
+
+
+ 
+  
+ 
+
+</body>
+</html>

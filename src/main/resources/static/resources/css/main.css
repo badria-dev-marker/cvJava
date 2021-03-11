@@ -1,0 +1,182 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	
+	
+}
+@font-face {
+	font-family: 'Selfie_Black';
+	src: url(font/Selfie_Black.otf);
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url(font/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url(font/OpenSans-Regular.ttf);
+}
+
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.row {
+	flex-flow: row wrape;
+}
+.col {
+	flex-flow: column wrape;
+}
+
+.block_index {
+	/*border: 2px solid #000;*/
+	width: 100%;
+	height: 80px;
+	background: #0d7ad0;
+	max-height: 400px;
+	
+	
+}
+.container_index {
+	border: 2px solid #00f;
+	width: 80%;
+	height: 90%;
+	
+	
+}
+.container_index a {
+	border: 2px solid #000;
+	width: 20%;
+	height: 100%;
+	font-family: 'Selfie_Black';
+	text-decoration:none;
+	font-size: 2em;
+	color:#fff;
+	corsur:pointer;
+}
+.container_index a:hover,
+.dropDown1 button:hover {
+	background-color: #fff;
+	color: #0d7ad0;
+	
+	
+	
+}
+
+
+.container_dropDown1 {
+	/*border: 5px solid #000;*/
+	width: 20%;
+	height: 90%;
+	position: relative;
+	
+
+
+}
+.dropDown1 {
+	/*border: 5px solid #0f0;*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	
+	
+}
+.dropDown1 button {
+	border: none;
+	position: relative;
+	width: 100%;
+	height: 75px;
+	font-family: 'Selfie_Black';
+	font-size: 2em;
+	background: transparent;
+	cursor: pointer;
+	color: #fff;
+	
+
+}
+.dropDown1 button span {
+	font-size: .8em;
+}
+
+.dropDown1 ul {
+	/*border: 5px solid #00f;*/
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 225px;
+	background: rgba(0, 0, 0, .8);
+	transform-origin: top;
+	transform: perspective(1000px) rotateX(-90deg);
+	font-family: 'Selfie_Black';
+	font-size: 1.8em;
+	transition: all 1s ease-out;
+}
+ul.active {
+	transform: perspective(1000px) rotateX(0deg);
+}
+.dropDown1 ul li {
+	list-style: none;
+	width: 100%;
+	height: 25%;
+}
+
+
+.dropDown1 ul li a  {
+	border-bottom: 4px solid rgba(0, 0, 0, .2);
+	width: 100%;
+	height: 100%;
+	display: block;
+	top:0px;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-family: 'Selfie_Black';
+	font-size: 1.3em;
+	background: #262626;
+	transition: .5s;
+}
+.dropDown1 ul li a:hover {
+	background: #0d7ad0;
+}
+
+@media screen and (max-width: 780px){
+	.block_index {
+	/*border: 2px solid #000;*/
+	
+	height: 400px;
+	
+	flex-flow: column;
+	
+	
+	
+}
+	.container_dropDown1 {
+	/*border: 5px solid #000;*/
+	width: 80%;
+	height: 20%;
+	
+	
+
+
+}
+	.container_index {
+	flex-flow: column;
+	width: 80%;
+	height: 80%;
+	}
+	.container_index a {
+	border: 2px solid #000;
+	width: 100%;
+	height: 20%;
+
+}
+}
+
+
+

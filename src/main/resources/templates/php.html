@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8" />
+<title>php</title>
+<link rel="icon" type="text/css" th:href="@{src/images/badev.png}">
+<link rel="stylesheet"
+	th:href="@{https://use.fontawesome.com/releases/v5.7.2/css/all.css}">
+<link rel="stylesheet" type="text/css" th:href="@{srcmath/css/main.css}">
+<body>
+	<div class="block_php">
+		<h1 class="php">Aridj-Net</h1>
+		<p class="php">Application mobile pour un label de musique est en cours de développement
+			. . . . . .</p>
+		<p class="php">Je vous laisse contempler cette belle nuit étoilée</p>
+
+
+		<div class="block_svg_belleNuit">
+			<div class="rect_ciel">
+
+				<svg th:version="1.1" id="Calque_1" class='svgBnuit'
+					th:xmlns="@{http://www.w3.org/2000/svg}"
+					th:xmlns:xlink="@{http://www.w3.org/1999/xlink}" x="0px" y="0px"
+					width="800px" height="400px">
+
+					<defs>
+
+						 <linearGradient id="Gradient-1" x1="20%" y1="30%" x2="60%"
+						y2="100%">
+					        <stop offset="10%" stop-color="#45a" stop-opacity='.5' />
+					        <stop offset="50%" stop-color="#f99a57" />
+					        <stop offset="100%" stop-color="#e5b" stop-opacity='.5' />
+					    </linearGradient>
+
+						 <linearGradient id="reflect" xlink:href="#Gradient-1"
+						spreadMethod="reflect" />
+					     <linearGradient id="pad" xlink:href="#Gradient-1"
+						spreadMethod="pad" />
+					</defs>
+
+					<rect x="0" y="0" id='cielInter' width="800px" height="400px"
+						fill="#51f" />
+					<rect x="0" y="0" id='cielJour' width="800px" height="400px"
+						fill="url(#reflect)" />
+
+			</svg>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" th:src="@{srcmath/js/php.js}"></script>
+
+</body>
+</html>

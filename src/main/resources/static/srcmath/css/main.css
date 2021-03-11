@@ -1,0 +1,365 @@
+html, body {
+	margin: 0px;
+	font-family: "Century Gauthic", calibri, serif;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	/*font-size: 1rem;*/ line-height : 1.5;
+	color: #333;
+	
+	line-height: 1.5;
+}
+
+/*partie title*/
+
+
+
+/*partie video code*/
+
+
+.v-header {
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+	color: #fff;
+}
+.container {
+	max-width: 960px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+	text-align: center;
+}
+.fullscreen-vedeo-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.fullscreen-vedeo-wrap video {
+	min-width: 100%;
+	min-height: 100%;
+}
+.header-overlay {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #225470;
+	opacity: 0.55;
+	z-index: 1;
+
+}
+.header-content {
+	z-index: 2;
+	
+}
+.header-content h1 {
+	font-size: 50px;
+	margin-bottom: 0;
+
+}
+.header-content p {
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: 2rem;
+}
+
+
+
+
+
+/*Partie du triangle de pascal
+
+/*debut de l'affichage du triangle Pascal*/
+
+
+.math {
+	/*border: 2px solid rgb(151, 54, 133);*/
+	
+	display: flex;
+	flex-flow: column;
+	
+	align-items: center;
+	width: 100wh;
+	height:100vh;
+}
+.math h1 {
+	margin-top: 1.5em;
+}
+.demo, .t_pas, .t_pas_1, .t_pas_2, .div_parag_pascal, .hello_pascal,
+	.tablePascal {
+	/*border: 3px solid #000;*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+	
+}
+
+.demo {
+	/*border: 3px solid #00F;*/
+	width: 100%;
+	height: 100%;
+	
+	
+}
+
+.t_pas {
+	/*border: 3px solid #0f0;*/
+	width: 98%;
+	height: 600px;
+}
+
+.t_pas_1, .t_pas_2 {
+	width: 49%;
+	height: 90%;
+	background: #efefef;
+	border-radius: 80px;
+	align-self: center;
+}
+
+.t_pas_1 {
+	/*border: 5px solid #000;*/
+	flex-flow: column;
+	border-left: 3px solid rgb(197, 54, 77);
+	border-top: 3px solid rgb(197, 54, 77);
+	border-bottom: 3px solid rgb(197, 54, 77);
+	box-shadow: 5px 10px 5px rgb(14, 52, 107);
+}
+/*div hello_pascal qui apparait avant le display du triangle de Pascal*/
+.hello_pascal {
+	/*border: 2px solid #000;*/
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	background-color: rgb(14, 52, 107);
+	border: 10px solid rgb(197, 54, 77);
+	/*transition: display 5s cubic-bezier(.15,.68,.93,.05);*/
+	box-shadow: 5px 10px 5px rgb(14, 52, 107);
+}
+
+.div_parag_pascal {
+	/*border: 3px solid #00f;*/
+	width: 95%;
+	height: 10%;
+	
+}
+
+.t_pas_2 {
+	flex-flow: column;
+	border-right: 3px solid rgb(197, 54, 77);
+	border-top: 3px solid rgb(197, 54, 77);
+	border-bottom: 3px solid rgb(197, 54, 77);
+	box-shadow: 5px -10px 5px rgb(14, 52, 107);
+}
+
+.parag_triPas {
+	/*border: 3px solid #ff0;*/
+	width: 80%;
+	height: 50%;
+	overflow-y: scroll;
+}
+
+#parag_pascal {
+	font-size: 20px;
+}
+
+.header {
+	/*border: 3px solid #00f;*/
+	width: 80%;
+	height: 50%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+
+.header_row_trianglePascal {
+	/*border: 3px solid #0f0;*/
+	width: 95%;
+	height: 90%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#form_trianglePascal {
+	/*border: 3px solid #00f;*/
+	width: 95%;
+	height: 95%;
+}
+
+.header_col, .btn_input {
+	/*border: 3px solid #f00;*/
+	width: 95%;
+	height: 30%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#btn_inp, #nombre {
+	border: 6px solid rgb(14, 52, 107);
+	font-size: 12px;
+	box-shadow: 5px -5px 5px #efefef;
+	cursor: pointer;
+	width:90%;
+	height:80%;
+}
+
+#nombre {
+	width: 70%;
+	background: #9a1127;
+}
+
+#btn_inp {
+	width: 50%;
+	height: 95%;
+	
+}
+
+#btn_inp:active {
+	margin-top: -20px;
+}
+
+/*matrice debut */
+table td {
+	padding: 5px;
+	border: 3px solid rgb(197, 54, 77);
+	background: rgba(20, 52, 94, 0.9);
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 5px -10px 5px rgba(14, 52, 107, 0.5);
+}
+
+table {
+	margin: auto;
+}
+
+/*partie concernant les slides*/
+
+
+/*partie concernant le file experience2*/
+
+/*coucher de soleil*/
+
+/*code pour une belle nuit*/
+
+.block_php{
+	/*border: 2px solid #f00;*/
+	width:100%;
+	height:100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(31,20,94);
+}
+.php{
+	color: white;
+}
+.block_svg_belleNuit, .rect_ciel {
+	/*border: 2px solid #f00;*/
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.block_svg_belleNuit {
+	/*border: 3px solid #00f;*/
+	width: 100%;
+	height: 450px;
+}
+
+.rect_ciel {
+	/*border: 1px solid #0f0;*/
+	width: 900px;
+	height: 400px;
+}
+
+.svgBnuit {
+	/*border: 1px solid #efefef;*/
+	width: 800px;
+	height: 400px;
+	vertical-align: middle;
+}
+
+.ciel {
+	/*border: 1px solid #0f0;*/
+	width: 100%;
+	height: 100%;
+}
+
+/* begin partie slide*/
+
+.block_slide {
+	/*border: 3px solid #00f;*/
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(17, 24, 36);
+}
+
+.container_slide {
+	/*border: 3px solid #0f0;*/
+	width: 95%;
+	height: 95%;
+	/*position: relative;*/
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	/*background-color: #efefef;*/
+	
+}
+.parfum {
+	/*border: 3px solid #f00;*/
+	width: 95%;
+	height: 95%;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: center;
+	/* background-image: url(../img/img0.png);
+	background-repeat: no-repeat;
+	background-size: cover; */
+	
+}
+.img {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+}
+#img0 {
+	opacity: 1;
+	
+}
+#img1, #img2, #img3, #img4,
+#img5, #img6, #img7, #img8,
+#img9, #img10, #img11, #img12,
+#img13, #img14, #img15, #img16,
+#img17, #img18 {
+	opacity: 0;
+	
+}
+
+
+
+/*end slide*/

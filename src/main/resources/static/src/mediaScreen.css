@@ -1,0 +1,206 @@
+@media screen and (max-width: 780px){
+	
+	.block_document_nom {
+		/*border: 2px solid #0f0;*/
+		justify-content: flex-start;
+		height: 5%;
+	}
+	
+	
+	
+	/***********************************end block nom**********************/	
+	
+	.block_cv {
+	/*border: 2px solid #ff0;*/
+	width: 95%;
+	height: 88%;
+	
+	background-color: rgb(25, 25, 25);
+
+/***********************************children ***********************************/	
+
+}
+	.presentation {
+		/*border: 2px solid #ff0;*/
+		width: 95%;
+		height: 25%;
+		position: relative;
+		flex-flow: column;
+		justify-content: center;
+		flex-direction: column-reverse;
+
+	}
+	.presentation_parag {
+		/*border: 2px solid #f00;*/
+		width: 100%;
+		height: 75%;
+	
+
+	
+	}
+	#parag {
+		
+		font-size: 12;
+		color: white;
+	}
+	.presentation_photo {
+		/*border: 2px solid #00f;*/
+		width: 10em;
+		height: 10em;
+		margin-right: -50%;
+	
+	}
+	.container_cv {
+		/*border: 2px solid #f00;*/
+		width: 95%;
+		height: 60%;
+		flex-flow: column;
+		
+	}
+	.container_cv_col1 {
+		/*border: 2px solid rgba(207, 167, 95, .5);*/
+		width: 95%;
+		height: 95%;
+	}
+	.container_cv_col2 {
+		/*border: 2px solid #f00;*/
+		width: 95%;
+		height: 95%;
+	}
+	.experience {
+		/*border: 3px solid rgba(207, 167, 95, .9);*/
+		
+		height: 95%;
+	
+		
+
+	}
+	.container_cv_col1 {
+		/*border-right: 2px solid #f00;*/
+		width: 90%;
+		height: 55%;
+}
+	.container_cv_col2 {
+		/*border: 2px solid #0f0;*/
+		width: 90%;
+		height: 45%;
+	}
+	.experience1, .experience2,
+	.experience3, .experience4,
+	.experience5, .experience6,
+	.experience7 {
+		/*border: 2px solid #00F;*/
+		width: 95%;
+		height: 20%;
+		flex-flow: row wrap;
+
+
+	}
+	.experience1_header {
+		/*border: 2px solid #a00;*/
+		width: 5em;
+		height: 50%;
+	}
+	.experience1_date {
+		/*border: 2px solid #00f;*/
+		width: 95%;
+		height: 20%;
+		font-family: Selfie_Black;
+		font-size: 1.5em;
+		color: rgb(207, 167, 95);
+	}
+	.experience1_header {
+		/*border: 2px solid #00f;*/
+		width: 7em;
+		height: 7em;
+		border-radius: 50%;
+	
+	
+
+
+}
+	.sections_panel {
+	
+	margin-left: 7em;
+	
+	
+	
+
+}
+	
+	.experience1_body {
+		/*border: 2px solid #f00;*/
+		width: 75%;
+		height: 99%;
+	}
+
+
+	.block_footer {
+		/*border: 3px solid #efefef;*/
+		width: 100%;
+		height: 60em;
+		background-color: rgb(25, 25, 25);
+
+	}
+	.container_footer {
+		/*border: 3px solid #efefef;*/
+		width: 100%;
+		height: 100%;
+		flex-flow: column;
+		justify-content: flex-end;
+		
+	}
+	.footer_parag1 {
+		/*border: 2px solid #fff;*/
+		width: 90%;
+		
+	}
+	.footer_parag1 .gourmet{
+		/*border: 2px solid #fff;*/
+		width: 90%;
+		
+}
+	.footer_contact {
+		/*border: 2px solid #0F0;*/
+		flex-flow: column;
+		height: 30%;
+		width: 100%;
+	}
+	.contact {
+		/*border: 2px solid #f00;*/
+		width: 100%;
+		flex-flow: column;
+		
+		
+	}
+	.contact  div:first-child, .contact  div:last-child  {
+	/*border: 3px solid #F00;*/
+	width: 95%;
+	height: 35%;
+}
+	.contact, .copyright {
+		/*border: 2px solid #f11;*/
+		width: 100%;
+		
+	}
+	.container_reaseau {
+		/*border: 2px solid #f11;*/
+		width: 90%;
+		height: 70%;
+		flex-flow: column;
+		
+		
+	}
+	
+
+
+
+
+}
+/***********************************children ***********************************/	
+
+		/***********************************block nom**********************/	
+	
+	
+
+

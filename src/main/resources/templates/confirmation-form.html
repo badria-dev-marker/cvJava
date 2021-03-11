@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+
+<link rel="stylesheet" type="text/css"
+	th:href="@{../resources/css/form.css}" />
+<link rel="stylesheet" type="text/css"
+	th:href="@{../resources/css/confirmation.css}" />
+
+<title>Reservation Result</title>
+</head>
+<body>
+
+
+
+
+	<div class="block_form flex row">
+		<div class="container_form flex row">
+			<div class="box confirm flex col">
+				<div class="title flex row">
+					<h1 th:text="${fname}"></h1>
+				</div>
+				<div class="header flex col">
+					<p>Your reservation is confirmed successfully.</p>
+					<p>Please, re-check the details.</p>
+				</div>
+				<div class="container flex col">
+					<p th:text=" ${fname}"></p>
+					<p th:text=" ${lname}"></p>
+					<p th:text=" ${gender}"></p>
+
+
+				</div>
+				<div class="list flex row">
+					<h4>Meal(s):</h4>
+
+
+					<ul th:each="f : ${food}" class="meal flex row">
+						<li th:text="${f}"></li>
+					</ul>
+
+
+
+
+
+				</div>
+
+				<div class="newRes">
+					<p>
+						<a th:href="@{bookingForm}">Click here for a new reservation.</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript" th:src="@{../resources/js/form.js}"></script>
+
+</body>
+</html>

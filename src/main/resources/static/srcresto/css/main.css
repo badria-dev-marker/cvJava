@@ -1,0 +1,884 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	
+}
+
+/*...................................................................................*/
+/* Partie déclaration générale*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+
+
+
+@font-face {
+	font-family: 'Selfie_Black';
+	src: url(../font/Selfie_Black.otf);
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url(../font/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url(../font/OpenSans-Regular.ttf);
+}
+::selection {
+  background-color: lime;
+}
+div p {
+	overflow-y: scroll;
+}
+
+ .dispFlexRow {
+	
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/*...................................................................................*/
+/* End  partie déclaration*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+/* Begin partie 1 logo + barreMenu + gros titre
+/*...................................................................................*/
+
+
+
+.block_header {
+	/*border: 3px solid #000;*/
+	width: 100%;
+	height: 650px;
+
+}
+.container_header {
+	/*border: 3px solid #00f;*/
+	width: 100%;
+	height: 100%;
+	flex-flow: column;	
+	background-image: url(../img/citrouilles.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container_menu {
+	/*border: 5px solid #ff0;*/
+	width: 100%;
+	height: 10%;
+	
+
+}
+.header_logo {
+	/*border: 3px solid #fff;*/
+	width: 30%;
+	height: 100%;
+	
+}
+.header_logo svg #txtLogo {
+	font-size: 1.5em;
+	font-family: OpenSans-Bold, sans-serif;	
+	fill: #fff;
+
+}
+.menu {
+	/*border: 3px solid #0ff*/;
+	width: 70%;
+	height: 100%;
+	
+	justify-content: flex-end;
+	
+
+}
+.header_centent {
+	/*border: 3px solid #0f0;*/
+	width: 100%;
+	height: 85%;
+	
+	flex-flow: column;
+	
+}
+.cols {
+	/*border: 3px solid #fff;*/
+	width: 15%;
+	height: 100%;
+	
+}
+.cols > a {
+	font-family: OpenSans-Regular, sans-serif;
+	font-size: 1em;
+	
+	color: #fff;
+	text-decoration: none;
+}
+.cols > a:hover {
+	color: rgba(31, 47, 40, 1);
+}
+
+.header_centent  #div_h1  h1, #div_p {
+	color: #fff;
+	
+}
+#div_h1 {
+	/*border: 3px solid #fff;*/
+	width: 80%;
+	height: 50%
+
+	
+}
+
+/*essai*/
+.div_h1_svg {
+	width: 100%;
+	height: 100%;
+
+}
+#txtCenter {
+	
+	font-family: Selfie_Black, sans-serif;
+	font-style: italic;
+	font-size: 10vw;
+	font-weight: bold;
+	fill: #fff;
+	stroke: #fff;
+	stroke-dasharray: 0;
+	animation: csvg  3s cubic-bezier(0,.23,1,.1) 5;
+}
+@keyframes csvg {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dasharray: 0;
+
+	}
+
+	12.25% {
+		opacity: 2;
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 200;
+
+	}
+	25% {
+		opacity: 3;
+		fill: rgba(255, 255, 255, 0.2);
+		stroke-dasharray: 400;
+
+	}
+	37% {
+		opacity: 4;
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 600;
+
+	}
+	50% {
+		opacity: 5;
+		
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 800;
+		
+
+	}
+	65% {
+		opacity: 6;
+		
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 400;
+		
+
+	}
+
+	
+	75% {
+		opacity: 7;
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 200;
+
+	}
+	95% {
+		opacity: 8;
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 100;
+
+
+	}
+	99% {
+		opacity: 9;
+		
+		fill: rgba(165, 55, 35, 0.5);
+		stroke-dasharray: 50;
+		
+
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(31, 47, 40, 1);
+		stroke-dasharray: 0;
+
+
+	}
+
+
+}
+
+
+#div_p {
+	/*border: 3px solid #0ff;*/
+	width: 40%;
+	height: 30%;
+	font-size: 1.5em;
+	
+}
+#div_p > p {
+	text-align: center;
+}
+#div_lien {
+	border: 5px solid #fff;
+	width: 20%;
+	height: 10%;
+	border-radius: 20px;
+	
+	
+}
+
+#menuJour {
+/*	border: 3px solid #ff0;*/
+	color: #fff;
+	font-size; 
+	cursor: pointer;
+}
+
+/*...................................................................................*/
+/* End  partie 1 logo + barreMenu + gros titre*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+/* begin partie presentation*/
+/*...................................................................................*/
+
+ 
+.block_presentation {
+	/*border: 3px solid #000;*/
+	width: 100%;
+	height: 400px;
+}
+.container_presentation {
+	/*border: 3px solid #0f0;*/
+	width: 95%;
+	height: 95%;
+}
+.container_presentation_col1 {
+	/*border: 3px solid #00f;*/
+	width: 50%;
+	height: 100%;
+	flex-flow: column;
+	justify-content: space-around;
+}
+.container_presentation_col1_title {
+	/*border: 3px solid #f00;*/
+	width: 100%;
+	height: 30%;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.col1_title  {
+	/*border: 3px solid #ff0;*/
+	width: 80%;
+	height: 50%;
+	
+	
+}
+.col1_title h3 {
+	font-family: Selfie_Black, sans-serif;
+	font-style: italic;
+	font-size: 1.8em;
+	color: rgba(207, 167, 95, 2);
+}
+
+.col1_presentation {
+/*	border: 3px solid #0F0;*/
+	width: 40%;
+	height: 50%;
+	justify-content: center;
+}
+.sup {
+	/*border: 3px solid #0f0;*/
+	width: 20%;
+	height: 100%;
+	justify-content: center;
+}
+sup {
+	font-size: 1em;
+	font-family: OpenSans-Bold, sans-serif;
+}
+.divGmt {
+	/*border: 3px solid #f00;*/
+	width: 80%;
+	height: 100%;
+	justify-content: flex-start;
+}
+#gmt {
+	font-size: 1.7em;
+	font-family: OpenSans-Bold, sans-serif;
+}
+.col1_presentation_parag {
+	/*border: 3px solid #000;*/
+	width: 60%;
+	height: 70%;
+	text-align: center;
+}
+.container_presentation_col2 {
+	/*border: 3px solid #f00;*/
+	width: 500px;
+	height: 99%;
+	justify-content: space-around;	
+	position: relative;
+}
+
+
+
+.presentation_col2_img2, .presentation_col2_img1 {
+	
+	width: 45%;
+	height: 80%;
+	
+}
+.presentation_col2_img1 {
+	/*border: 3px solid #00f;*/
+	position: relative;
+	left: -50px;
+	top: -20px;
+	background-image: url(../img/chef-cuisine.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.presentation_col2_img2 {
+	/*border: 3px solid #f00;*/
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	background-image: url(../img/haricots.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+/*...................................................................................*/
+/*end partie Présenttaion*/
+/*...................................................................................*/
+
+
+
+
+/*...................................................................................*/
+/* Begin partie Galerie*/
+/*...................................................................................*/
+
+
+
+.block_galerie {
+	/*border: 3px solid #00f;*/
+	width: 100%;
+	height: 400px;
+	
+
+}
+.container_galerie {
+	/*border: 3px solid #0f0;*/
+	width: 99%;
+	height: 99%;
+}
+.galerie1, .galerie2, .galerie3 {
+/*	border: 3px solid #f00;*/
+	width: 33%;
+	height: 99%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.galerie1 {
+	background-image: url(../img/plat-1.jpg);
+}
+
+.galerie2 {
+
+	background-image: url(../img/plat-2.jpg);
+}
+.galerie3 {
+	background-image: url(../img/plat-3.jpg);
+}
+.galerie2 .div_h1_svg2 {
+	border: 2px solid rgba(207, 167, 95, 2);
+	width: 80%;
+	height: calc((100% / 2) - 6px);
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px #efefef;
+	
+}
+.div_h1_svg2  .txt1 {
+	font-family: Selfie_Black, sans-serif;
+	font-style: italic;
+	font-size: 3.5vw;
+	/*font-weight: bold;*/
+	fill: rgba(207, 167, 95, 2);
+	
+	}
+
+.div_h1_svg2  .txt2 {
+	font-family: OpenSans-Bold, sans-serif;
+	font-size: 2.5vw;
+	font-weight: bold;
+	fill: #000;
+	
+}
+
+/*...................................................................................*/
+/*end partie galerie*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+/* Begin partie menu*/
+/*...................................................................................*/
+
+
+.block_menu {
+	/*border: 3px solid #000;*/
+	width: 100%;
+	height: 550px;
+	flex-flow: column;
+
+
+
+}
+.menu_title {
+	/*border: 3px solid #0f0;*/
+	width: 80%;
+	height: 20%;
+	
+}
+.block_menu .menu_title svg {
+	/*border: 3px solid rgba(207, 167, 95, 2);*/
+	width: 100%;
+	height: 100%;
+}
+.block_menu .container_menu {
+		/*border: 3px solid #f00;*/
+		width: 95%;
+		height: 95%;
+		justify-content: space-around;
+		overflow-y: scroll;
+}
+.menu_col {
+		/*border: 3px solid #ff0;*/
+		width: 30%;
+		height: 95%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+}
+.block_menu .container_menu > div img {
+		width: 50px;
+		height: 50px
+}
+.block_menu .container_menu > div h3 {
+	font-family: OpenSans-Bold sans-serif;
+	color: rgba(207, 167, 95, .9);
+		
+
+}
+	
+.block_menu .container_menu > div p {
+		text-align: center;
+		overflow-y: scroll;
+}
+/*...................................................................................*/
+/*end partie menu*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+/* Begin partie réservation*/
+/*...................................................................................*/
+	
+
+.block_reservation {
+	/*	border: 3px solid #ff0;*/
+		width: 100%;
+		height: 600px;
+		background-image: url(../img/restaurant.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+}
+
+.block_reservation .reservation	{
+	/*border: 3px solid #f00;*/
+	width: 50%;
+	height: 30%;
+}
+.block_reservation .reservation svg {
+	border: 5px solid rgba(207, 167, 95, 2);
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px #efefef;
+	background-color: #fff;
+
+}
+/*...................................................................................*/
+/*end partie menu*/
+/*...................................................................................*/
+
+
+/*...................................................................................*/
+	/*Begin partie nos preoduits*/
+/*...................................................................................*/
+
+.block_nosProduit {
+		/*border: 3px solid #ff0;*/
+		width: 100%;
+		height: 400px;
+}
+.container_produits {
+	/*	border: 3px solid #f00;*/
+		width: 100%;
+		height: 100%;
+}
+.groseilles, .nosProduits {
+		/*border: 3px solid #00f;*/
+		width: calc((100% / 2) - 6px);
+		height: calc((100% ) - 6px);
+}
+
+.block_nosProduit .container_produits .groseilles #grseilles {
+		/*border: 2px solid #f00;*/
+		width: 300px;
+		height: 300px;
+		position: absolute;
+}
+.container_fraises {
+		/*border: 2px solid #0f0;*/
+		width: 170px;
+		height: 170px;
+		position: relative;
+		left: 60px;
+		bottom: -80px
+		
+}
+.block_nosProduit .container_produits .groseilles #fraises1 {
+		/*border: 2px solid #f0f;*/
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		
+		/*left: 120px;
+		bottom: -50px*/
+}
+#fraises2 {
+		/*border: 2px solid #00f;*/
+		width: 70px;
+		height: 70px;
+		left: -20px;
+		bottom: -20px;
+		position: relative;
+}
+.nosProduits {
+		flex-flow: column;
+		justify-content: flex-start;
+
+}
+
+.nosProduits_title, .nos_produits_parag {
+/*	border: 2px solid #000;*/
+	width: 80%;
+	display: flex;
+	flex-flow: column;
+	
+	align-items: center; 
+	align-self: center;
+}
+.nosProduits_title {
+	height: 35%;
+	justify-content: flex-end;
+}
+.nosProduits_title svg {
+	border: 17px solid rgba(207, 167, 95, 2);
+	border-radius: 20px;
+	border-bottom: none;
+	border-top: none;
+	width: 100%;
+	height: 100%;
+
+}
+.nos_produits_parag {
+	height: 65%;
+	justify-content: flex-start;
+}
+.nosProduits_title .nos_produits {
+	height: 100%;
+}
+.nosProduits div p {
+	text-align: center;
+}
+#div_know {
+	border: 3px solid #aaa;
+	width: 40%;
+	height: 50px;
+	background-color: rgba(207, 167, 95, .9);
+
+}
+#div_know p {
+	text-align: center;
+}
+#div_know a {
+	text-decoration: none;
+	color: black;
+}
+
+#div_know:hover {
+	
+	margin-bottom: 10px;
+}
+/*...................................................................................*/
+/*end partie nosProduits*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+/* Begin partie footer*/
+/*...................................................................................*/
+
+.block_footer {
+	/*border: 3px solid #efefef;*/
+	width: 100%;
+	height: 400px;
+	background-color: rgb(25, 25, 25);
+
+}
+.container_footer {
+	/*border: 3px solid #efefef;*/
+	width: 100%;
+	height: 100%;
+	flex-flow: column;
+	justify-content: flex-end;
+	
+	
+
+	
+}
+.footer_parag1, .footer_parag2 {
+	/*border: 2px solid #fff;*/
+	width: 50%;
+	height: 30%;
+	flex-flow: column;
+}
+.liens {
+	/*border: 2px solid #ff0;*/
+	width: 30%;
+	height: 20%;
+	justify-content: space-around;
+}
+
+.liens > a {
+	color: none;
+}
+
+.footer_contact {
+	/*border: 3px solid #fff;*/
+	width: 100%;
+	height: 15%;
+	background-color: #000;
+	color: #fff;
+	font-size: .7em;
+
+
+
+	
+	
+}
+.contact, .copyright {
+	/*border: 3px solid #0f0;*/
+	height: 100%;
+	justify-content: center;
+}
+.contact {
+	width: 50%;
+	justify-content: center;
+
+}
+.contact  div:first-child, .contact  div:last-child  {
+	/*border: 3px solid #fff;*/
+	width: 45%;
+	height: 80%;
+}
+
+.contact  .span {
+/*	border: 3px solid #f00;*/
+	width: 5%;
+	height: 80%;
+}
+
+.copyright {
+	width: 40%;
+	
+}
+
+.footer_parag1 > p, .footer_parag2 > p {
+	color: #fff;
+	font-size: .7em;
+	text-align: center;
+}
+.gourmet {
+	width: 100px;
+	color: #fff;
+	border-bottom: 2px solid #fff
+}
+
+
+.liens a[target=_blank]:hover {
+	background-color: rgb(147, 32, 54);
+	margin-right: 10px;
+	border: 3px solid rgb(147, 32, 54);
+	border-radius: 50px;
+}
+
+.contact a:last-child {
+	color: #fff;
+	text-decoration: none;
+
+}
+polygon {
+	animation: move 1s ease infinite;
+}
+@keyframes move {
+	0% {
+		fill: #fff;
+	}
+	50% {
+		fill: rgba(207, 167, 95, 2);
+	}
+	100% {
+		fill: #fff;
+	}
+}
+/*...................................................................................*/
+/*end partie footer*/
+/*...................................................................................*/
+
+/*...................................................................................*/
+/*Begin partie @media */
+/*...................................................................................*/
+
+
+@media screen and (max-width: 780px) {
+	.copyright  {
+		
+		border: .5px solid #f00;
+		display: none
+	}
+	.block_footer {
+		height: 500px;
+	}
+	.block_presentation {
+		height: 700px;
+	}
+	.block_galerie {
+		height: 800px;
+	}
+	.block_menu {
+		height: 700px
+	}
+	.menu_title {
+		height: 15%;
+	}
+	.block_nosProduit {
+		height: 600px;
+	}
+	.block_header {
+		height: 750px;
+	}
+
+	.container_presentation, .container_galerie,
+	.container_menu,  .nosProduits, 
+	.container_produits, .contact
+	
+ {
+		width: 100%;
+		height: 100%;
+		flex-flow: column;
+		justify-content: space-around;
+		overflow-y: scroll;
+
+	}
+	.galerie1, .galerie2, .galerie3 {
+		width: 60%;
+		height: calc((100% / 3) - 6px);
+
+	}
+	.container_presentation_col1 {
+		width: 90%;
+	}
+	.container_presentation_col1 .col1_presentation_parag {
+		
+		width: 90%;
+	}
+	.block_reservation {
+		height: 400px
+	}
+	.reservation {
+		height: 10%;
+	}
+	.menu {
+		flex-flow: column;
+	}
+	.cols {
+		width: 50%;
+	}
+	#div_know {
+		width: 45%;
+	}
+	.header_logo {
+		width: 100%;
+		height: 20%;
+	}
+	.container_menu {
+		width: 100%;
+		height: 35%;
+	}
+	.menu_col {
+		width: 100%;
+	}
+	#div_lien {
+		width: 50%;
+	}
+	.header_centent #div_h1 {
+		height: 40%;
+	}
+	
+	.col1_presentation {
+	
+	width: 50%;
+	
+	justify-content: space-around;
+}
+.sup {
+	
+	width: 20%;
+	
+	justify-content: flex-start;
+}
+#div_p {
+	width: 80%;
+}
+
+}
+
+
+
+
+

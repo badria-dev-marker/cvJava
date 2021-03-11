@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+<title>badriaCv</title>
+<meta charset="utf-8" />
+<meta name="description"
+	content="voici mon CV en ligne qui reprend mes compétences, mon parcours, mon profil">
+<meta name="keywords" content="resume, cv, Portfolio, developper, developpeur, java, flutter">
+<meta name="author" content="cv badria nguyen">
+<link rel="icon" type="text/css" th:href="@{../src/images/badev.png}">
+<link rel="stylesheet" type="text/css" th:href="@{../src/main.css}">
+<link rel="stylesheet" type="text/css" th:href="@{../src/mediaScreen.css}">
+
+</head>
+<body>
+	<div class="block_document flex col">
+		<div class="block_document_nom flex row">
+			<svg class='nom_svg' th:xmlns="@{http://www.w3.org/2000/svg}">
+	  			<text id='nom' x="10%" y="70%">
+	    			Badria NGUYEN
+	  			</text>
+			</svg>
+		</div>
+
+
+		<!-- begin block cv -->
+		<div class="block_cv flex col">
+			<div class="presentation flex row">
+				<div class="presentation_parag flex row">
+					<p id="parag">Développeuse de logiciels, applications web et mobiles, j'ai
+						une passion pour l'algorithmie & la programmation et le monde
+						numérique. je suis en constante progression dans le domaine de
+						développement. Motivée par le besoin de faire toujours mieux, je
+						prends plaisir à résoudre les problèmes mathématiques et relever de nouveaux challenges. Je suis très
+						autonome, curieuse scientifiquement, persévérante, ambitieuse,
+						flexible et polyvalente, j'ai un bon esprit d'analyse et un bon
+						sens relationnel. Je suis actuellement à la recherche d'un emploi
+						à plein temps en développement.</p>
+				</div>
+				<div class="presentation_photo flex row"></div>
+			</div>
+			<div class="container_cv flex row">
+				<div class="container_cv_col1 flex col">
+					<p id="experience_titre">Expériences professionnelles</p>
+					<div class="experience flex col">
+
+						<div class="experience1 flex row">
+							<div class="experience1_header t1 flex col">
+								<a class="clic flex row" th:href="@{/flutter}" target="_blank">Clic</a>
+
+							</div>
+
+							<div class="experience1_body flex col">
+								<div class="experience1_date flex row">2020</div>
+								<p id="parag">Développement d'une application mobile
+									weathTime avec flutter; wt, donne dynamiquement, le temps ainsi
+									que la météo dans toutes les villes du monde, elle est publiée
+									sur App store</p>
+
+
+								<div class="sections_panel flex row">
+									<div>J'ai choisi flutter car il offre la possiblité de
+										créer de belles applications compilées en mode natif pour
+										mobile ( Android , iOS,... ) , En effet, j'ai développé des
+										applications mobiles en intéraction avec des APIs de service,
+										&#38; firebase database &#38; MySql</div>
+
+								</div>
+							</div>
+							<span class="navarrow flex col">&#9662;</span>
+						</div>
+						<div class="experience2 flex row">
+							<div class="experience1_header t2 flex col">
+								<a class="clic flex row" th:href="@{/bookingForm}"
+									target="_blank">Clic</a>
+
+							</div>
+
+
+							<div class="experience1_body flex col">
+								<div class="experience1_date flex row">2019</div>
+								<p id="parag">Une petite application de type maven faite en
+									java avec spring et thymleaf; c'est une application de
+									réservation qui pourrait être utilisée par les compagnies de
+									transport ou par les réstaurants</p>
+								<div class="sections_panel flex row">
+									<div>Le développement d'API back-end en java permet la
+										sécurité de cette dernière, car ce langage a renforcé la
+										sécurité pour protéger davantage le système utilisateur contre
+										les exploitations externes, la raison pour laquelle j'ai
+										choisi ce langage pour développer quellques applications tel
+										qu'un site ecommerce en utilisant les EJB et hibernate,</div>
+
+								</div>
+
+							</div>
+							<span class="navarrow flex col">&#9662;</span>
+						</div>
+
+						<div class="experience4 flex row">
+							<div class="experience1_header t4 flex col">
+								<a class="clic flex row" th:href="@{/php}" target="_blank">Clic</a>
+							</div>
+
+
+							<div class="experience1_body flex col">
+								<div class="experience1_date flex row">2019</div>
+
+								<p id="parag">
+									J'ai rempli un cahier des charges avec un client,<br>
+									il voudrait une application mobile pour son label de musique.
+								</p>
+								<div class="sections_panel flex row">
+									<div>
+										L'application mobile serait faite en flutter (Front-End), 
+										et Php avec Laravel en (Back-End).<br> Mon client exige une application
+										qui ne nécissite pas beaucoup de essources, la raison pour laquelle
+										on a opté pour le langage Php.
+									</div>
+
+								</div>
+							</div>
+							<span class="navarrow flex col">&#9662;</span>
+						</div>
+						<div class="experience5 flex row">
+
+							<div class="experience1_header t5 flex col">
+								<a class="clic flex row" th:href="@{/resto}" target="_blank">Clic</a>
+
+							</div>
+
+
+
+
+							<div class="experience1_body flex col">
+								<div class="experience1_date flex row">2018</div>
+								<p id="parag">Cette application est développée en html 5,
+									css3, svg et javascripte, c'est une interface graphique d'un
+									restaurant, elle est responsive sans avoir besoin d'utiliser de
+									framwork.</p>
+
+								<div class="sections_panel flex row">
+									<div>
+										J'ai un socle de connaissances solide en Html5, css3,
+										javascript et svg; <br> en effet, ce dernier m'a permise
+										de développer plusieurs interfaces graphiques UI, et m'a
+										beaucoup aidée à me perfectionner en flutter.
+
+									</div>
+
+								</div>
+							</div>
+							<span class="navarrow flex col">&#9662;</span>
+						</div>
+						<div class="experience6 flex row">
+							<div class="experience1_header t6 flex col">
+								<a class="clic flex row" th:href="@{/mathAlgo}" target="_blank">Clic</a>
+							</div>
+
+
+							<div class="experience1_body flex col">
+								<div class="experience1_date flex row">2013 - 2017</div>
+								<p id="parag">
+									Enseignante de chimie organique & chimie analytique & structure
+									de la matière à l'université.<br /> Enseignante de
+									Mathématiques & sciences physiques au lycées & collèges.
+
+								</p>
+								<div class="sections_panel flex row">
+									<div>L'enseigment est basé sur le savoir, le savoir faire
+										et le savoir-être; mon expérience dans l'enseigment m'a appris
+										le savoir de simplifier la notion et la transmetttre,
+										d'extraire les capacités de chacun et les exploiter dans le
+										bon sens. Ma stratégie est d'aider l'élève ou l'étudient à
+										regagner confiance en soi et apprendre à aimer la matière en
+										question.</div>
+
+								</div>
+
+							</div>
+							<span class="navarrow flex col">&#9662;</span>
+						</div>
+						<div class="experience7 flex row">
+							<div class="experience1_header t7 flex col">
+								<a class="clic flex row" th:href="@{/parfum}" target="_blank">Clic</a>
+
+							</div>
+
+
+							<div class="experience1_body flex col">
+								<div class="experience1_date flex row">2006 - 2012</div>
+								<p id="parag">Production de parfums & de produits
+									cosmétiques naturels & produits de nettoyage et d'entretient</p>
+								<div class="sections_panel flex row">
+									<div>La réapparition du naturel témoigne d’un désir
+										profond de se tourner vers une alternative respectueuse de
+										l’être humain et de la planète. Cette tendance traduit aussi
+										la conséquence de la perte de confiance envers les progrès de
+										la science, censés améliorer notre quotidien, mais qui ont
+										fini par causer des préjudices humains et environnementaux
+										considérables. Parce que la santé passe aussi par la peau,
+										j’ai accordé une grande importance à la recherche scientifique
+										de produits de soins cosmétiques 100% naturels. J’ai travaillé
+										pendant six ans dans l’entreprise ARIDJ-NET (Algérie), j’étais
+										chargée de la production des parfums, produits cosmétiques et
+										produits de nettoyage et d'entretien. J’ai pu créer de
+										nouvelles formules de savons naturels, de crèmes corporelles
+										et de bases de shampoing naturelles, apportant ainsi des
+										améliorations à ceux existants. Je veillais à la bonne qualité
+										des matières premières et des produits conçus.</div>
+
+								</div>
+							</div>
+							<span class="navarrow flex col">&#9662;</span>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="container_cv_col2 flex col">
+					<p id="competence_titre">Compétences sur 5</p>
+					
+				
+
+					
+					<div class="competence flex col">
+
+						<div class="competence_date flex row">2019</div>
+
+						<div class="competence_body flex row">
+							<p id="parag">Applications mobiles avec Flutter, Api,
+								Firebase, MySql</p>
+						</div>
+						<div class="competence_niveau flex row">
+							<span></span> <span></span> <span></span> <span></span>
+
+						</div>
+					</div>
+					<div class="competence flex col">
+
+						<div class="competence_date flex row">2019</div>
+
+						<div class="competence_body flex row">
+							<p id="parag">Java EE avec spring, hibernate, EJB, JSP,
+								Thymleaf, mySql</p>
+						</div>
+						<div class="competence_niveau flex row">
+							<span></span> <span></span> <span></span> <span></span>
+
+						</div>
+					</div>
+						
+					<div class="competence flex col">
+
+						<div class="competence_date flex row">2018</div>
+
+						<div class="competence_body flex row">
+							<p id="parag">Javascript, Json, Html5, Css3, Svg</p>
+						</div>
+						<div class="competence_niveau flex row">
+							<span></span> <span></span> <span></span> <span></span> 
+
+						</div>
+					</div>
+					
+					<div class="competence flex col">
+
+						<div class="competence_date flex row">2019</div>
+
+						<div class="competence_body flex row">
+							<p id="parag">
+								POO / MVC, Gestion
+								de projets, modélisation, conception UML, Méthode agiles, <br>macOs, Linux ubuntu, Windows
+
+							</p>
+						</div>
+						<div class="competence_niveau flex row">
+							<span></span> <span></span> <span></span>
+
+
+
+						</div>
+					</div>
+					<div class="competence flex col">
+
+						<div class="competence_date flex row">2019</div>
+
+						<div class="competence_body flex row">
+							<p id="parag">Python, Angular, Php, bootstrap, Material</p>
+						</div>
+						<div class="competence_niveau flex row">
+							<span></span> <span></span><span></span>
+
+
+
+						</div>
+					</div>
+					<div class="competence flex col">
+
+						<div class="competence_date flex row">1992</div>
+
+						<div class="competence_body flex row">
+							<p id="parag">Algorithmie, Langage Pascal, Systèmes de
+								numération et leurs conversions.<br> Maths, probabilités & statistiques</p>
+						</div>
+						<div class="competence_niveau flex row">
+							<span></span> <span></span> <span></span> <span></span>
+
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<!-- end container cv -->
+
+			<!-- begin container cv formation-->
+			<div class="container_cv_formation flex col">
+				<p id="formation_titre">Formations</p>
+
+				<div class="formation flex col">
+
+					<div class="formation_container flex col">
+						<div class="formation1 flex row">
+							<div class="formation1_body flex row">
+								<p id="parag">Formation de Concepteur & Développeur java
+									« BGE - Toulouse - FRANCE»</p>
+							</div>
+							<div class="formation1_date flex row">
+								<p>2019</p>
+							</div>
+						</div>
+
+						<div class="formation1 flex row">
+							<div class="formation1_body flex row">
+								<p id="parag">Développeur & Concepteur Full Stack « Labège -
+									Toulouse - FRANCE»</p>
+							</div>
+							<div class="formation1_date flex row">
+								<p>2018</p>
+							</div>
+						</div>
+						<div class="formation1 flex row">
+							<div class="formation1_body flex row">
+								<p id="parag">
+									Master en Électrochimie « Synthèse des Polymères par voie
+									électrochimique » <br>Université d’Annaba « Algérie »
+
+								</p>
+							</div>
+							<div class="formation1_date flex row">
+								<p>2004</p>
+							</div>
+						</div>
+						<div class="formation1 flex row">
+							<div class="formation1_body flex row">
+								<p id="parag">
+									Diplôme de première Année de Magistère « Applications
+									électrochimiques » <br>Université d’Annaba « Algérie »
+
+								</p>
+							</div>
+							<div class="formation1_date flex row">
+								<p>2001</p>
+							</div>
+						</div>
+						<div class="formation1 flex row">
+							<div class="formation1_body flex row">
+								<p id="parag">
+									Ingénieur d'État « Chimie Analytique » <br>Université
+									d’Annaba « Algérie »
+
+								</p>
+							</div>
+							<div class="formation1_date flex row">
+								<p>1999</p>
+							</div>
+						</div>
+						<div class="formation1 flex row">
+							<div class="formation1_body flex row">
+								<p id="parag">
+									Baccalauréat en Informatique « Langage Pascal/ l'Algorithmie/
+									Structure de la machine/ Bases Numériques » <br>Lycée Said
+									ZERROUKI de BBA (Algérie)
+
+
+								</p>
+							</div>
+							<div class="formation1_date flex row">
+								<p>1992</p>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- end block cv -->
+
+
+
+		<!-- 	<!-- footer -->
+		<div class="block_footer flex col">
+
+			<div class="container_footer flex col">
+
+				<div class="footer_parag1 flex col">
+
+					<div class="gourmet flex col">
+						<p>Badria NGUYEN</p>
+					</div>
+
+					<p>FRANCE</p>
+
+				</div>
+
+				<div class="container_reaseau flex row">
+					<div class="flex row extrusion_reseau">
+						<a id="fa" class="flex row" th:href="@{https://www.facebook.com}"
+							target="_blank">f</a>
+					</div>
+					<div class="flex row extrusion_reseau">
+						<a id="tw" class="flex row" th:href="@{https://twitter.com/}"
+							target="_blank">tw</a>
+					</div>
+					<div class="flex row extrusion_reseau">
+						<a id="go" class="flex row"
+							th:href="@{https://aboutme.google.com}" target='_blank'>g&#43;</a>
+					</div>
+					<div class="flex row extrusion_reseau">
+						<a id="ln" class="flex row" th:href="@{http://linkedin.com}"
+							target="_blank">in</a>
+					</div>
+					<div class="flex row extrusion_reseau">
+						<a id="ins" class="flex row"
+							th:href="@{https://www.instagram.com}" target="_blank">ins</a>
+					</div>
+
+				</div>
+
+
+
+				<div class="footer_contact flex row">
+					<div class="contact flex row">
+						<div class="flex row">
+							<p id="p1">TÉLÉPHONE  &#43;33 06 09 28 01 67</p>
+						</div>
+						<div class="flex row span">
+							<span>&#73;</span>
+						</div>
+						<div class="mail flex row">
+							<a href="mailto:badrianguyen@gmail.com">MAIL -
+								CONTACT@BADRIA.FR</a>
+						</div>
+
+					</div>
+					<div class="copyright flex row">
+						<p id="p2">©BADRIA 2019 TOUT DROIT RÉSERVÉ</p>
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+<!-- end footer-->
+
+
+
+	</div>
+
+
+	<script type="text/javascript" th:src="@{src/main.js}"></script>
+
+
+
+
+</body>
+</html>

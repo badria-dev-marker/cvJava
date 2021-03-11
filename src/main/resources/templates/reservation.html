@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/" >
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description"
+	content="voici mon CV en ligne qui reprend mes compétences, mon parcours, mon profil">
+	<meta name="keywords" content="informatique, developper, developpeur, java, flutter, pascal, algorithme, mysql">
+	<meta name="author" content="cv badria nguyen">
+	<link rel="stylesheet" type="text/css" th:href="@{../resources/css/form.css}">
+	<title>Reservation</title>
+</head>
+
+<body>
+		
+			<div class="block_form flex row">
+			<div class="container_form flex row">
+				<div class="box flex col">
+					<h2>Réservation</h2>
+					<form class="form flex col" th:action="@{submitForm}"  method="post" >
+						<div class="inputBox flex row" >
+							<input type='text' id="fname" name="fname" required="required" maxlength="30"/>	
+							<label for="fname">Firstname</label>
+							
+							
+						</div>
+						<div class="inputBox flex row" >
+								<input type="text" id="lname" name="lname"  required="required" maxlength="30" />
+							 
+								<label for="lname">Lastname</label>
+						</div>
+						<div class="inputBox flex row" >
+							<h3>Gender: </h3>
+							<div class="gender flex row">
+	      						<input type="radio" name="gender" id="mal" value="Male" required="required"/>
+	      						<label for="mal">Mal</label>
+   							</div>
+   							<div class="gender flex row">
+	      					<input type="radio"  id="female" name="gender" value="Female" required="required"/>
+	      						<label for="female">Female</label>
+   							</div>
+							
+						</div>
+						<div class="inputBox flex row" >
+							<h3>Meals: </h3>
+							<div class="meals flex row">
+	      						<input type="checkbox" name="food"  id="breakfast" th:value="BreakFast" th:checked="${food}"/>
+	      						<label for="breakfast">Breakfats</label>
+   							</div>
+   							<div class="meals flex row">
+	      						<input type="checkbox" id="lunch" name="food" th:value="Lunch" th:checked="${food}"/>
+	      						<label for="lunch">Lunch</label>
+   							</div>
+   							<div class="meals flex row">
+	      						<input type="checkbox" id="dinner" name="food" th:value="Dinner" th:checked="${food}"/>
+	      						<label for="dinner">dinner</label>
+   							</div>
+							
+						</div>
+						<input type="submit" name="" value="Submit" />
+   
+						
+					</form>
+				
+				</div>
+			</div>
+		
+			
+		</div>
+	
+</body>
+</html>
