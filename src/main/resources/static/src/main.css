@@ -479,7 +479,7 @@ html, body {
 /***************************************************************************/
 .block_footer {
 	border: 3px solid #efefef;
-	
+	width: 90%;
 	background-color: rgb(17, 24, 36);
 	grid-column-start: 1;
 	grid-column-end: 12;
